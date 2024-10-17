@@ -24,4 +24,14 @@ public class CalculatorTest {
         int expected = Integer.MAX_VALUE + b;
         Assertions.assertEquals(expected, actual);
     }
+
+    @Test
+    public void testSum3() {
+        int a = 0;
+        int b = 0;
+        Calculator calculator = new Calculator();
+        int actual = calculator.sum(a, b);
+        int expected = 0;
+        Assertions.assertEquals(expected, actual);
+    }
 }
